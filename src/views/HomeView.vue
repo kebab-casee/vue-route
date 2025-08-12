@@ -17,8 +17,8 @@
 </template>
 
 <script setup>
-import Navbar from "./components/Header.vue";
-import carsData from "./data/data.json";
+import Navbar from "../components/Header.vue";
+import carsData from "../data/data.json";
 </script>
 
 <style></style>
