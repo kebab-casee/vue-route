@@ -1,24 +1,16 @@
 <template>
-  <Navbar />
-  <main>
-    <div class="container">
-      <div class="cards">
-        <div class="card">
-          <ul>
-            <li v-for="car in carsData" :key="car.id">
-              <h1 class="text-lg font-bold">{{ car.make }}</h1>
-              <p>${{ car.price }}</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <main class="flex justify-center items-center h-screen">
+    <ul class="flex flex-row">
+      <CarCard v-for="car in cars" :key="car.id" :car="car" />
+    </ul>
   </main>
 </template>
 
 <script setup>
-import Navbar from "../components/Header.vue";
 import carsData from "../data/data.json";
+import CarCard from "../components/CarCard.vue";
+
+const cars = ref(carsData);
 </script>
 
 <style></style>
