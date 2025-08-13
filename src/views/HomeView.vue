@@ -1,6 +1,6 @@
 <template>
   <main class="flex justify-center items-center h-screen">
-    <ul class="flex flex-row">
+    <ul class="grid grid-cols-4 gap-2 justify-center">
       <CarCard v-for="car in cars" :key="car.id" :car="car" />
     </ul>
   </main>

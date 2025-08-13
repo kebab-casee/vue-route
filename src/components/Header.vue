@@ -6,10 +6,12 @@
       </div>
       <ul class="flex justify-center items-center gap-2">
         <li class="cursor-pointer hover:underline">
-          <RouterLink to="/">Home</RouterLink>
+          <RouterLink active-class="bg-gray-800 p-2" to="/">Home</RouterLink>
         </li>
         <li class="cursor-pointer hover:underline">
-          <RouterLink to="/about">About</RouterLink>
+          <RouterLink active-class="bg-gray-800 p-2" to="/about"
+            >About</RouterLink
+          >
         </li>
       </ul>
     </nav>
