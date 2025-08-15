@@ -11,6 +11,9 @@ export default defineConfig({
       imports: ["vue", "vue-router"],
       dts: "src/auto-imports.d.ts",
     }),
+    quasar({
+      sassVariables: "src/quasar-variables.sass",
+    }),
   ],
   server: {
     port: 3000,

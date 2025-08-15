@@ -1,7 +1,8 @@
 <template>
-  <PageLayout>
+  <!-- <PageLayout>
     <RouterView />
-  </PageLayout>
+  </PageLayout> -->
+  
 </template>
 
 <script setup>
